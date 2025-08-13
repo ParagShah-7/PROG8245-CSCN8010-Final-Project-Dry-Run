@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Project</title>
+</head>
+<body>
+<h1>⚡ Sustainable AI Prompt Energy Estimator</h1>
+<p>An interactive Streamlit tool that helps you design and optimize text prompts for large language models—tracking both inference <strong>and</strong> training energy, analyzing token complexity, and suggesting more sustainable alternatives.</p>
+<hr />
+<h2>🔍 Project Overview</h2>
+<p>With the meteoric rise of Large Language Models (LLMs), prompt design can drive up compute usage—and with it, energy consumption. This estimator lets you:</p>
+<ol>
+<li><strong>Measure</strong> energy use for both <strong>inference</strong> and <strong>training</strong> modes  </li>
+<li><strong>Analyze</strong> token complexity of your prompt  </li>
+<li><strong>Optimize</strong> prompts via a T5-based simplification workflow  </li>
+<li><strong>Persist</strong> training-energy values even when you iterate  </li>
+<li><strong>Clear</strong> a prompt instantly with a transparent “✖️” button  </li>
+</ol>
+<hr />
+<h2>🧠 Key Features</h2>
+<ul>
+<li><strong>Real-time metrics</strong> for <strong>Inference</strong> &amp; <strong>Training</strong> energy (kWh)  </li>
+<li><strong>Token complexity</strong> counter before and after optimization  </li>
+<li><strong>“Improve” workflow</strong> that keeps training-energy static  </li>
+<li><strong>Transparent clear button</strong> to reset your prompt instantly  </li>
+<li><strong>Light / Dark theming</strong> via CSS media queries  </li>
+</ul>
+<hr />
+<h2>🗂️ Project Structure</h2>
+<p>Project-8010/
+├── app/
+│ ├── business_logic/
+│ │ ├── nlp_module.py # complexity, energy formulas, prompt generation
+│ │ └── prediction_module.py # intent-category classifier
+│ ├── controller/
+│ │ └── GUI.py # Streamlit interface (with clear-button + metrics)
+│ └── assets/ # logos, icons, static CSS
+├── data/ # (optional) any datasets
+├── models/
+│ ├── anomaly_detector/ # (optional) isolation-forest artifacts
+│ ├── energy_predictor/ # (optional) regressor artifacts
+│ └── prompt_classifier/ # serialized scikit-learn classifier
+├── notebooks/ # experimentation notebooks
+└── README.md</p>
+<hr />
+<h2>🚀 Getting Started</h2>
+<ol>
+<li>
+<p><strong>Clone the repo</strong><br />
+   ```bash
+   git clone https://github.com/your-org/sustainable-prompt-estimator.git
+   cd sustainable-prompt-estimator/app/controller</p>
+</li>
+<li>
+<p><strong>Install Independencies</strong>
+   pip install -r ../requirements.txt</p>
+</li>
+<li>
+<p><strong>Run the App</strong>
+   streamlit run app/conroller/GUI.py</p>
+</li>
+</ol>
+<details> <summary>💡 Requirements</summary>
+Python 3.8+
+
+Streamlit, transformers, torch, scikit-learn
+
+(Optional) GPU / CUDA for faster T5 summarization
+
+</details>
+
+<h2>🌱 Why It Matters</h2>
+<p>Prompt engineering isn’t just about model accuracy—it’s about sustainability. By visualizing and optimizing energy consumption, you can:</p>
+<p>Lower your carbon footprint</p>
+<p>Reduce cloud-compute costs</p>
+<p>Share more efficient prompts with peers</p>
+<h2>👥 Authors &amp; Acknowledgments</h2>
+<p>Parag Shah</p>
+<p>Kapil Bharadwaj</p>
+<p>Preetpal Singh</p>
+<p>Artificial Intelligence &amp; Machine Learning, Conestoga College, 2025</p>
+</body>
+</html>
